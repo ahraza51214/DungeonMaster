@@ -16,10 +16,10 @@ class Program
 
         // Level up heroes
         wizard.LevelUp();
+        wizard.LevelUp();
         archer.LevelUp();
         swashbuckler.LevelUp();
         barbarian.LevelUp();
-        wizard.LevelUp();
 
         // Equip weapons
         IItem staff = new Weapon("Magic Staff", 1, WeaponType.Staff, 10);
