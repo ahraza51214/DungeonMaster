@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace DungeonMaster.Heroes
 {
     // Class to represent hero attributes

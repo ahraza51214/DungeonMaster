@@ -27,10 +27,10 @@ namespace DungeonMaster.Heroes
             if (equipmentManager.GetEquipment(Slot.Weapon) is Weapon weapon)
             {
                 // Calculate the damage based on the weapon damage and strength
-                return (int)(weapon.WeaponDamage * (1 + LevelAttributes.Strength / 100.0));
+                return (int)Math.Round(weapon.WeaponDamage * (1 + LevelAttributes.Strength / 100.0));
             }
             // If no weapon is equipped, default WeaponDamage to 1
-            return (int)(1 * (1 + LevelAttributes.Strength / 100.0));
+            return (int)Math.Round(1 * (1 + LevelAttributes.Strength / 100.0));
         }
     }
 }
