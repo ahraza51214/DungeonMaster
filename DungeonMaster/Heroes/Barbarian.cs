@@ -20,7 +20,7 @@ namespace DungeonMaster.Heroes
             LevelAttributes.IncreaseBy(3, 2, 1);
         }
 
-        // Override CalculateDamage() method to add specific logic for hero
+        // Override CalculateDamage() method to calculate damage based on the specific attribute for hero type, with and without veileding a weapon
         public override int CalculateDamage()
         {
             // Get the equipped weapon
