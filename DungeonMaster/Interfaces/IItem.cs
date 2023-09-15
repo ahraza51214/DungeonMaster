@@ -7,7 +7,7 @@ namespace DungeonMaster.Interfaces
 	public interface IItem
 	{
 		string Name { get; }
-		int RequiredLevel { get; }
+		uint RequiredLevel { get; }
 		Slot Slot { get; }
 	}
 }

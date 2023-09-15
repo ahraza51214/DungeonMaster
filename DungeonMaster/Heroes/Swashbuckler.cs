@@ -20,11 +20,17 @@ namespace DungeonMaster.Heroes
             LevelAttributes.IncreaseBy(1, 4, 1);
         }
 
+        // Override CalculateDamage() method to add specific logic for hero
         public override int CalculateDamage()
         {
-            // Calculate damage based on attributes and equipped weapon
-            int damage = 1 + LevelAttributes.Dexterity / 10;
-            return damage;
+            // Get the equipped weapon
+            if (equipmentManager.GetEquipment(Slot.Weapon) is Weapon weapon)
+            {
+                // Calculate the damage based on the weapon damage and dexterity
+                return (int)(weapon.WeaponDamage * (1 + LevelAttributes.Dexterity / 100.0));
+            }
+            // If no weapon is equipped, default WeaponDamage to 1
+            return (int)(1 * (1 + LevelAttributes.Dexterity / 100.0));
         }
     }
 }
