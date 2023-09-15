@@ -10,12 +10,12 @@ namespace DungeonMaster.Equipment
     // Class to manage hero equipment
     public class EquipmentManager
     {
-        private readonly Dictionary<Slot, IItem> equipment;
+        private readonly Dictionary<Slot, IItem?> equipment;
 
         public EquipmentManager()
         {
             // Initialize equipment slots with null values
-            equipment = new Dictionary<Slot, IItem>
+            equipment = new Dictionary<Slot, IItem?>
             {
                 { Slot.Weapon, null },
                 { Slot.Head, null },

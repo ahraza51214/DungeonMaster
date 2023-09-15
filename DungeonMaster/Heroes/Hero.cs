@@ -47,7 +47,7 @@ namespace DungeonMaster.Heroes
 
             foreach (Slot slot in Enum.GetValues(typeof(Slot)))
             {
-                IItem equippedItem = equipmentManager.GetEquipment(slot);
+                IItem equippedItem = equipmentManager.GetEquipment(slot)!;
 
                 if (equippedItem is Armor armor)
                 {
