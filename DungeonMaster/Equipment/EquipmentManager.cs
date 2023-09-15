@@ -30,7 +30,7 @@ namespace DungeonMaster.Equipment
             // Check if the hero's level is sufficient to equip the item
             if (item.RequiredLevel > hero.Level)
             {
-                throw new InvalidOperationException("Hero's level is too low to equip this item.");
+                throw new InvalidEquipmentException($"Hero {hero.Name} must be on Level {item.RequiredLevel} to equip this item.");
             }
 
             // Check if the item is a weapon
