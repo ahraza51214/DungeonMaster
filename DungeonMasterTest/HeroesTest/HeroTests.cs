@@ -28,9 +28,6 @@
 
             // Assert
             Assert.Equal(2, barbarian.Level);
-            Assert.Equal(8, barbarian.LevelAttributes.Strength);
-            Assert.Equal(4, barbarian.LevelAttributes.Dexterity);
-            Assert.Equal(2, barbarian.LevelAttributes.Intelligence);
         }
 
 

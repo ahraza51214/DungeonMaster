@@ -3,6 +3,23 @@
 	public class ArcherTests
     {
         [Fact]
+        public void TestHeroLevelUpWithAttributes()
+        {
+            // Arrange
+            Hero archer = new Archer("Legolas");
+
+            // Act
+            archer.LevelUp();
+
+            // Assert
+            Assert.Equal(2, archer.Level);
+            Assert.Equal(2, archer.LevelAttributes.Strength);
+            Assert.Equal(12, archer.LevelAttributes.Dexterity);
+            Assert.Equal(2, archer.LevelAttributes.Intelligence);
+        }
+
+
+        [Fact]
         public void TestCalculateDamageWithNoWeapon()
         {
             // Arrange
