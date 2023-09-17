@@ -7,13 +7,14 @@ namespace DungeonMasterTests.ItemsTest
 {
 	public class ArmorTests
 	{
+        // Test to check the properties and armorAttributes upon creating a new Armor
         [Fact]
         public void ArmorConstructor_ShouldSetProperties()
         {
-            // Arrange & Act
+            // Arrange
             var armor = new Armor("Plate Mail", 10, Slot.Body, ArmorType.Plate, new HeroAttribute(10, 5, 0));
 
-            // Assert
+            // Act & Assert
             Assert.Equal("Plate Mail", armor.Name);
             Assert.Equal(10, (int)armor.RequiredLevel);
             Assert.Equal(Slot.Body, armor.Slot);
