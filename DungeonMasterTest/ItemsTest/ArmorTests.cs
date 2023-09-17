@@ -1,9 +1,4 @@
-﻿using System;
-using DungeonMaster.Enums;
-using DungeonMaster.Heroes;
-using DungeonMaster.Items;
-
-namespace DungeonMasterTests.ItemsTest
+﻿namespace DungeonMasterTests.ItemsTest
 {
 	public class ArmorTests
 	{

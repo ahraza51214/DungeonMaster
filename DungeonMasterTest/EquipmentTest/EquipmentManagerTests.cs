@@ -1,12 +1,4 @@
-﻿using System;
-using DungeonMaster.Enums;
-using DungeonMaster.Equipment;
-using DungeonMaster.Heroes;
-using DungeonMaster.Items;
-using DungeonMaster.ExceptionHandling;
-using DungeonMaster.Interfaces;
-
-namespace DungeonMasterTests.EquipmentTest
+﻿namespace DungeonMasterTests.EquipmentTest
 {
     public class EquipmentManagerTests
     {
