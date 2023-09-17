@@ -93,7 +93,7 @@ namespace DungeonMasterTests.HeroesTest
 
             // Assert
             var totalAttributes = barbarian.CalculateTotalAttributes();
-            Assert.Equal(30, totalAttributes.Strength); // 5 (Base) + 20 (Plate Armor) + 10 (Leg Armor)
+            Assert.Equal(35, totalAttributes.Strength); // 5 (Base) + 30 (Steel Plate Armor)
             Assert.Equal(2, totalAttributes.Dexterity); // Base Dexterity 2
             Assert.Equal(1, totalAttributes.Intelligence); // Base Intelligence 1
         }
