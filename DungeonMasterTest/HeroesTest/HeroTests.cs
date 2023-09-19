@@ -96,16 +96,17 @@
             // Arrange
             Hero barbarian = new Barbarian("Aragorn");
 
-            // Act
+            // Act 
+            barbarian.LevelUp(); // Changing state of hero to level 2
             string display = barbarian.Display();
 
             // Assert
             Assert.Contains("Name: Aragorn", display);
             Assert.Contains("Class: Barbarian", display);
-            Assert.Contains("Level: 1", display);
-            Assert.Contains("Total Strength: 5", display);
-            Assert.Contains("Total Dexterity: 2", display);
-            Assert.Contains("Total Intelligence: 1", display);
+            Assert.Contains("Level: 2", display);
+            Assert.Contains("Total Strength: 8", display);
+            Assert.Contains("Total Dexterity: 4", display);
+            Assert.Contains("Total Intelligence: 2", display);
         }
     }
 }
